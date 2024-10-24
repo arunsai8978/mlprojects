@@ -9,7 +9,6 @@ __pycache__/
 
 #folder
 notebook/
-
 src/components/artifacts/
 src/components/catboost_info/
 
