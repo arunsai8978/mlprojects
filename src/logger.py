@@ -8,11 +8,9 @@ LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 # Get the directory where the logger.py file is located.
 root_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Set logs_path to a writable location, either relative to your app or to a standard temp directory.
-# Using a directory within your project:
-logs_path = os.path.join(root_dir, "..", "logs")
-
-# Or, you can use a temporary directory:
+# Change logs_path to a writable location:
+logs_path = os.path.join(root_dir, "logs")  # Keeping it in the project directory
+# Alternatively, for a system-wide writable location:
 # logs_path = "/tmp/logs"
 
 # Ensure the logs directory exists.
